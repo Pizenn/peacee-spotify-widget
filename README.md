@@ -29,6 +29,7 @@ Sebelum menjalankan proyek ini, pastikan kamu memiliki:
 git clone [https://github.com/username-kamu/spotify-widget.git](https://github.com/username-kamu/spotify-widget.git)
 cd spotify-widget
 npm install
+```
 
 **2. Setup Spotify Developer**
 - Buka Spotify Developer Dashboard.
@@ -44,32 +45,33 @@ Demi keamanan, file kredensial diabaikan oleh Git dan tidak disertakan di reposi
 
 JavaScript
 // src/main/config.js
-module.exports = {
+```module.exports = {
     CLIENT_ID: 'MASUKKAN_CLIENT_ID_KAMU_DI_SINI',
     CLIENT_SECRET: 'MASUKKAN_CLIENT_SECRET_KAMU_DI_SINI',
     REDIRECT_URI: 'http://localhost:8888/callback'
 };
-
+```
 **Cara Menjalankan Aplikasi**
 Mode Development (Dengan Watcher CSS otomatis):
 
-Bash
+```Bash
 npm run dev
 Mode Standar:
 
 Bash
 npm start
+```
 
 **Build ke Aplikasi Windows (.exe)**
 Untuk menjadikan proyek ini sebagai aplikasi Windows portabel yang siap diklik ganda:
 
-Bash
+```Bash
 npm run build
 Proses build akan menghasilkan file Spotify Widget.exe di dalam folder dist/. File ini bersifat portable, sehingga bisa kamu pindahkan ke desktop atau didaftarkan ke Startup Windows agar otomatis menyala saat laptop dihidupkan.
-
+```
 ## Catatan Penting
-**Mengapa Lirik Kosong? Widget menggunakan database terbuka dari komunitas (LRCLIB). Jika tertulis "Lirik tidak tersedia / Instrumental", berarti lirik lagu tersebut memang belum diunggah ke database mereka.
+Mengapa Lirik Kosong? Widget menggunakan database terbuka dari komunitas (LRCLIB). Jika tertulis "Lirik tidak tersedia / Instrumental", berarti lirik lagu tersebut memang belum diunggah ke database mereka.
 
-**Otentikasi: Saat aplikasi dijalankan pertama kali, akan ada jendela pop-up otentikasi Spotify. Kamu harus menyetujui akses tersebut agar widget mendapatkan izin membaca dan mengontrol lagu yang sedang diputar.
+Otentikasi: Saat aplikasi dijalankan pertama kali, akan ada jendela pop-up otentikasi Spotify. Kamu harus menyetujui akses tersebut agar widget mendapatkan izin membaca dan mengontrol lagu yang sedang diputar.
 
-**Dibuat dengan ❤️ untuk pengalaman mendengarkan musik yang lebih estetis.
+Dibuat dengan ❤️ untuk pengalaman mendengarkan musik yang lebih estetis.
