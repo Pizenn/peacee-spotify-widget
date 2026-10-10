@@ -29,14 +29,15 @@ Sebelum menjalankan proyek ini, pastikan kamu memiliki:
 git clone [https://github.com/username-kamu/spotify-widget.git](https://github.com/username-kamu/spotify-widget.git)
 cd spotify-widget
 npm install
-2. Setup Spotify Developer
+
+**2. Setup Spotify Developer**
 - Buka Spotify Developer Dashboard.
 - Buat aplikasi baru (Create App).
 - Masuk ke menu Settings pada aplikasi yang baru dibuat.
 - Tambahkan URI ini persis ke dalam kolom Redirect URIs: http://localhost:8888/callback
 - Simpan perubahan, lalu catat Client ID dan Client Secret milikmu.
 
-3. Konfigurasi Kredensial Rahasia
+**3. Konfigurasi Kredensial Rahasia**
 Demi keamanan, file kredensial diabaikan oleh Git dan tidak disertakan di repositori ini. Kamu wajib membuatnya secara manual:
 - Buat file baru bernama config.js di dalam folder src/main/.
 - Salin format berikut ke dalam file config.js tersebut dan ganti dengan milikmu:
@@ -49,7 +50,7 @@ module.exports = {
     REDIRECT_URI: 'http://localhost:8888/callback'
 };
 
-Cara Menjalankan Aplikasi
+**Cara Menjalankan Aplikasi**
 Mode Development (Dengan Watcher CSS otomatis):
 
 Bash
@@ -59,16 +60,16 @@ Mode Standar:
 Bash
 npm start
 
-Build ke Aplikasi Windows (.exe)
+**Build ke Aplikasi Windows (.exe)**
 Untuk menjadikan proyek ini sebagai aplikasi Windows portabel yang siap diklik ganda:
 
 Bash
 npm run build
 Proses build akan menghasilkan file Spotify Widget.exe di dalam folder dist/. File ini bersifat portable, sehingga bisa kamu pindahkan ke desktop atau didaftarkan ke Startup Windows agar otomatis menyala saat laptop dihidupkan.
 
-Catatan Penting
-Mengapa Lirik Kosong? Widget menggunakan database terbuka dari komunitas (LRCLIB). Jika tertulis "Lirik tidak tersedia / Instrumental", berarti lirik lagu tersebut memang belum diunggah ke database mereka.
+## Catatan Penting
+**Mengapa Lirik Kosong? Widget menggunakan database terbuka dari komunitas (LRCLIB). Jika tertulis "Lirik tidak tersedia / Instrumental", berarti lirik lagu tersebut memang belum diunggah ke database mereka.
 
-Otentikasi: Saat aplikasi dijalankan pertama kali, akan ada jendela pop-up otentikasi Spotify. Kamu harus menyetujui akses tersebut agar widget mendapatkan izin membaca dan mengontrol lagu yang sedang diputar.
+**Otentikasi: Saat aplikasi dijalankan pertama kali, akan ada jendela pop-up otentikasi Spotify. Kamu harus menyetujui akses tersebut agar widget mendapatkan izin membaca dan mengontrol lagu yang sedang diputar.
 
-Dibuat dengan ❤️ untuk pengalaman mendengarkan musik yang lebih estetis.
+**Dibuat dengan ❤️ untuk pengalaman mendengarkan musik yang lebih estetis.
