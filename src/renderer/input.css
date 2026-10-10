@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    -webkit-app-region: drag;
+    user-select: none;
+    /* Kita hilangkan margin dan padding dari body asli agar tidak memicu gap aneh */ 
+  }
+  
+  button, a {
+    -webkit-app-region: no-drag;
+  }
+}
