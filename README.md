@@ -67,6 +67,7 @@ Untuk menjadikan proyek ini sebagai aplikasi Windows portabel yang siap diklik g
 
 ```Bash
 npm run build
+```
 Proses build akan menghasilkan file Spotify Widget.exe di dalam folder dist/. File ini bersifat portable, sehingga bisa kamu pindahkan ke desktop atau didaftarkan ke Startup Windows agar otomatis menyala saat laptop dihidupkan.
 ```
 ## Catatan Penting
